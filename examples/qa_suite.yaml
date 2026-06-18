@@ -4,7 +4,23 @@ cases:
     prompt: "What is the capital of France?"
     expected: "Paris"
     scorer: exact
+
   - id: explain_gravity
     prompt: "Explain gravity in one sentence."
-    expected: "Gravity is a force that attracts objects with mass toward each other."
+    expected: "force"
+    scorer: contains
+
+  - id: py_version_check
+    prompt: "What Python version introduced f-strings?"
+    expected: "^3\\.6"
+    scorer: regex
+
+  - id: largest_planet
+    prompt: "What is the largest planet in our solar system?"
+    expected: "Jupiter"
+    scorer: exact
+
+  - id: water_formula
+    prompt: "What is the chemical formula for water?"
+    expected: "H2O"
     scorer: contains
