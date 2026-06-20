@@ -1,0 +1,13 @@
+suite: judge_examples
+cases:
+  - id: add_two_numbers
+    prompt: "Write a Python function that adds two numbers."
+    expected: "correct and idiomatic Python"
+    scorer: llm-judge
+    rubric: "The function should use a def statement, accept two parameters, and return their sum."
+
+  - id: explain_recursion
+    prompt: "Explain recursion in two sentences."
+    expected: "clear explanation mentioning base case"
+    scorer: llm-judge
+    rubric: "The explanation should define recursion and mention the concept of a base case to stop infinite loops."
